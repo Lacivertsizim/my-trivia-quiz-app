@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <h1>Trivia Quiz</h1>
+    </div>
+    <div id="quiz-wrapper">
+      <div id="selection">
+        <div id="noq-wrapper" class="mt-3">
+          <label for="number-of-question">Number of question</label><br />
+          <input
+            type="text"
+            class="form-control"
+            value="10"
+            id="number-of-question"
+          />
+        </div>
+        <div id="category-wrapper" class="mt-3">
+          <label for="category">Category</label><br />
+          <select id="category" class="form-select">
+            <option value="9">General Knowledge</option>
+            <option value="10">Entertainmen Books</option>
+            <option value="12">Entertainmen Music</option>
+            <option value="11">Entertainmen Film</option>
+            <option value="21">Sports</option>
+          </select>
+        </div>
+        <div id="diff-wrapper" class="mt-3">
+          <label for="difficulty">Difficulty</label><br />
+          <select id="difficulty" class="form-select">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+        </div>
+        <button
+          type="button"
+          id="start"
+          class="btn w-100 mt-3"
+        >
+          Start Quiz
+        </button>
+      </div>
+    </div>
+    <div id="loading-wrapper">
+      <img src="./loading.gif" alt="Loading" />
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="module" async src="./script.js"></script>
+  </body>
+</html>
